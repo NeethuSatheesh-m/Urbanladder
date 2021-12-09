@@ -12,7 +12,7 @@ public class UrbanLadderTesting {
 	 public void launchBrowser() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		 d=new ChromeDriver();
-		d.navigate().to("https://www.urbanladder.com/");
+		d.get("https://www.urbanladder.com/");
 		//d.findElement(By.linkText("Log-in")).click();
 		
 		d.manage().window().maximize();
